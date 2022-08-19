@@ -7,6 +7,7 @@ namespace ConditionAndLoopingDemos
     {
         static void Main(string[] args)
         {
+            //This is a comment.
             int i = 10;
             if (i==10)
             {
