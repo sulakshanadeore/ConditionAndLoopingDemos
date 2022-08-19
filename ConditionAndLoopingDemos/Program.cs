@@ -12,6 +12,10 @@ namespace ConditionAndLoopingDemos
             {
                 Console.WriteLine("I is equal to 10");
             }
+            else
+            {
+                Console.WriteLine("I is not equal to 10");
+            }
         }
     }
 }
