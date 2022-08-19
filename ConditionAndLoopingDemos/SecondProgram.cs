@@ -14,8 +14,10 @@ namespace ConditionAndLoopingDemos
             string s = "Hello ";
             int deptno = 0;
             string name = String.Empty;
+            string ename;
             Console.WriteLine("Enter your name");
             name = Console.ReadLine();
+            string desig;
             if (!string.IsNullOrEmpty(name))
             {
                 string greet = string.Concat(s, name);
@@ -26,11 +28,19 @@ namespace ConditionAndLoopingDemos
                 if (deptno!=0 &&(deptno>=1 || deptno<10))
                 {
                     Console.WriteLine("Thanks for the input");
+                    for (int i = 0; i < 2; i++)
+                    {
+                        Console.WriteLine("Enter employee name");
+                        ename = Console.ReadLine();
+                       Console.WriteLine("Enter his designation");
+                        desig = Console.ReadLine();
+                        Console.WriteLine("You entered name={0} and designation={1}",ename,desig);
+                    }
                 }
                 else
-                {
-                    Console.WriteLine("Pls enter valid Deptno");
-                }
+                Console.WriteLine("Pls enter valid Deptno");
+
+                
             }
 
             Console.ReadLine();
