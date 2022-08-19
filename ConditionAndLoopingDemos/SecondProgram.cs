@@ -10,7 +10,8 @@ namespace ConditionAndLoopingDemos
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("This is my second main");
+            Console.ReadLine();
         }
     }
 }
