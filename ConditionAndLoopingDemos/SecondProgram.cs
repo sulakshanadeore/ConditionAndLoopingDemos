@@ -12,6 +12,7 @@ namespace ConditionAndLoopingDemos
         {
             Console.WriteLine("This is my second main");
             string s = "Hello ";
+            int deptno = 0;
             string name = String.Empty;
             Console.WriteLine("Enter your name");
             name = Console.ReadLine();
@@ -20,6 +21,16 @@ namespace ConditionAndLoopingDemos
                 string greet = string.Concat(s, name);
                 //string greet = s + name;
                 Console.WriteLine(greet);
+                Console.WriteLine("Enter your Deptno");
+                deptno = Convert.ToInt32(Console.ReadLine());
+                if (deptno!=0 &&(deptno>=1 || deptno<10))
+                {
+                    Console.WriteLine("Thanks for the input");
+                }
+                else
+                {
+                    Console.WriteLine("Pls enter valid Deptno");
+                }
             }
 
             Console.ReadLine();
