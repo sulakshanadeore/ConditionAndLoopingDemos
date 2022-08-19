@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConditionAndLoopingDemos.ForLoopExample</StartupObject>
+    <StartupObject>ConditionAndLoopingDemos.ContinueDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,10 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContinueDemo.cs" />
     <Compile Include="ForLoopExample.cs" />
+    <Compile Include="PatternLoopDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecondProgram.cs" />
+    <Compile Include="WhileExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
