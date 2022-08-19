@@ -28,6 +28,7 @@ namespace ConditionAndLoopingDemos
                 if (deptno!=0 &&(deptno>=1 || deptno<10))
                 {
                     Console.WriteLine("Thanks for the input");
+
                     for (int i = 0; i < 2; i++)
                     {
                         Console.WriteLine("Enter employee name");
@@ -42,6 +43,16 @@ namespace ConditionAndLoopingDemos
 
                 
             }
+
+            Console.WriteLine("Print Table for a given number");
+            Console.WriteLine("Pls enter  a number for the table to be printed");
+            int no = Convert.ToInt32(Console.ReadLine());
+            //initialization;condition;increment/decrement
+            for (int i = 1; i <=10; i++)
+            {
+                Console.WriteLine("{0}*{1}={2}",no,i,no*i);
+            }
+
 
             Console.ReadLine();
         }
